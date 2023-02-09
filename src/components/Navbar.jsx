@@ -1,5 +1,11 @@
+import { useContext, useEffect, useReducer, useState } from "react"
 import { Link } from "react-router-dom"
+import { UserContext } from "../context/userContext"
+
 const Navbar = () => {
+ 
+  const {state} = useContext(UserContext)
+
   return (
     <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-white py-2 shadow-sm">
@@ -27,7 +33,7 @@ const Navbar = () => {
     <div className="buttons">
         <Link to="/login" className="btn btn-outline-dark"><i className="fa fa-sign-in me-1"></i> Login</Link>
         <Link to="/register" className="btn btn-outline-dark ms-2"><i className="fa fa-user-plus me-1 "></i> Register</Link>
-        <Link to="/cart" className="btn btn-outline-dark ms-2"><i className="fa fa-shopping-cart me-1"></i> Cart (0)</Link>
+        <Link to="/cart" className="btn btn-outline-dark ms-2"><i className="fa fa-shopping-cart me-1"></i> Cart ({state.length})</Link>
     </div>
     </div>
   </div>
