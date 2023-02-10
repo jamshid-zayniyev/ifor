@@ -1,3 +1,22 @@
 .navbar-nav a{
 font-size: 18px;
 }
+.category-group{
+    justify-content: center;
+    overflow-x: auto;
+}
+#navfirst{
+    margin-left: 200px;
+}
+@media screen and (max-width:1200px) {
+    #navfirst{
+        margin-left: 100px;
+        
+    }
+}
+@media screen and (max-width:992px) {
+    #navfirst{
+        margin-left: 0px;
+        
+    }
+}

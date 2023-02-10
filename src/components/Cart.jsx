@@ -8,7 +8,6 @@ const Cart = () => {
       const newState =   state.map((x)=>
         {
             if(x.id === id){
-                setTotal(prev=>prev+x.price)
                 return  {...x, qty:x.qty+1}
             }
             else{
@@ -26,7 +25,6 @@ const Cart = () => {
             {
                 if(x.id===id) {
                    
-                setTotal(prev=>prev-x.price)
                 return  {...x, qty:x.qty-1}
                 }else{
                     return x
@@ -42,19 +40,20 @@ const Cart = () => {
     const Totalprice = ()=>{
         setTotal(0)
         state.map((item)=>{
-            // setTotal(item)
+            console.log(state);
             setTotal(prev=>prev+item.price*item.qty)
         })
     }
     useEffect(()=>{
         Totalprice()
-    },[])
+    },[state])
  
   return (
     <div className="container">
         <div className="row  bg-light justify-content-center align-items-center p-5">
 
             {state.length === 0  ? <h1>Your Cart is Empty</h1> : ""}
+            
             {state.map((item)=>{
                     
                return(
