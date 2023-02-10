@@ -10,6 +10,8 @@ import { useState } from "react"
 import NavR from "./components/Nav"
 import Login from "./components/Login"
 import Register from "./components/Register"
+import About from "./components/About"
+import Contact from "./components/Contact"
 const App = () => {
   const [state,setState] = useState([])
   
@@ -23,6 +25,8 @@ const App = () => {
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/products" element={<Products/>}/>
         <Route exact path="/products/:id" element={<Product/>}/>
+        <Route exact path="/about" element={<About/>}/>
+        <Route exact path="/contact" element={<Contact/>}/>
         <Route exact path="/cart" element={<Cart/>}/>
         <Route exact path="/login" element={<Login/>}/>
         <Route exact path="/register" element={<Register/>}/>
