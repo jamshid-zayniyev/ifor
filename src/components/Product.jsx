@@ -12,21 +12,17 @@ const Product = () => {
     const navigate = useNavigate()
     const {state,setState} = useContext(UserContext)
    const  handleCart = ()=>{
-        // setState([...state,{...product}])
         const exist = state.find((x)=>x.id === product.id)
         if(exist){
         state.map((x)=>
-                x.id === product.id ? {...x, qty:x.qty++} : x
+                x.id === product.id ? {...x, qty:1,pay:x.price} : x
             );
-            console.log(state);
         }
         else{
-            setState([...state,{...product,qty:1}])
-            console.log(state);
+            setState([...state,{...product,qty:1,}])
         }
         
     } 
-    console.log(state);
     useEffect(()=>{
         const getProduct = async()=>{
             setLoading(true)
@@ -66,7 +62,7 @@ const Product = () => {
     const ShowProduct=()=>{
         return(
             <>
-                <div className="col-md-6">
+                <div className="col-md-6" key={product.title}>
                     <img src={product.image} alt={product.title} height='400px' width='400px' />
                 </div>
                 <div className="col-md-6">
