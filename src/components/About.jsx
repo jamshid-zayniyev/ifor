@@ -6,17 +6,7 @@ const About = () => {
   return (
     <div className='container mt-5 '>
       <div className="row">
-        <div className="col-md-6">
-          <h1>About Us</h1>
-          <p className='text-secondary fs-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, quaerat.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, eligendi culpa facere repudiandae modi voluptatibus commodi maiores tempora fugiat quasi. Eligendi fugit facilis, dolorum cum architecto vitae officia autem eos magni numquam nisi et atque dignissimos aliquid modi, dolores voluptate esse! Obcaecati iste est deleniti veniam reiciendis officia ab ullam.</p>
-          <button className='btn btn-dark'>Read more</button>
-          <div className='mt-4'>
-            <button className='btn btn-dark'><i class="fa fa-instagram" aria-hidden="true"></i></button>
-            <button className='btn btn-dark m-2'><i class="fa fa-telegram" aria-hidden="true"></i></button>
-            <button className='btn btn-dark'><i class="fa fa-twitter" aria-hidden="true"></i></button>
-          </div>
-        </div>
+        
         <div className="col-md-6">
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -40,6 +30,17 @@ const About = () => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+        </div>
+        <div className="col-md-6">
+          <h1 className='mt-4'>About Us</h1>
+          <p className='text-secondary fs-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, quaerat.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, eligendi culpa facere repudiandae modi voluptatibus commodi maiores tempora fugiat quasi. Eligendi fugit facilis, dolorum cum architecto vitae officia autem eos magni numquam nisi et atque dignissimos aliquid modi, dolores voluptate esse! Obcaecati iste est deleniti veniam reiciendis officia ab ullam.</p>
+          <button className='btn btn-dark'>Read more</button>
+          <div className='mt-4'>
+            <button className='btn btn-dark'><i class="fa fa-instagram" aria-hidden="true"></i></button>
+            <button className='btn btn-dark m-2'><i class="fa fa-telegram" aria-hidden="true"></i></button>
+            <button className='btn btn-dark'><i class="fa fa-twitter" aria-hidden="true"></i></button>
+          </div>
         </div>
       </div>
     </div>
