@@ -7,7 +7,7 @@ const About = () => {
     <div className='container mt-5 '>
       <div className="row">
         
-        <div className="col-md-6">
+        <div className="col-lg-6 col-md-12">
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-inner">
@@ -31,7 +31,7 @@ const About = () => {
   </button>
 </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-lg-6 col-md-12">
           <h1 className='mt-4'>About Us</h1>
           <p className='text-secondary fs-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, quaerat.</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, eligendi culpa facere repudiandae modi voluptatibus commodi maiores tempora fugiat quasi. Eligendi fugit facilis, dolorum cum architecto vitae officia autem eos magni numquam nisi et atque dignissimos aliquid modi, dolores voluptate esse! Obcaecati iste est deleniti veniam reiciendis officia ab ullam.</p>

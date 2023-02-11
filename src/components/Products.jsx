@@ -60,6 +60,7 @@ const Products = () => {
                     <div class="mt-3 bd-highlight"><button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("women's clothing")}>Women's Clothing</button></div>
                     <div class="mt-3 bd-highlight"><button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("jewelery")}>Jewelery</button></div>
                     <div class="mt-3 bd-highlight"><button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("electronics")}>Electronic</button></div>
+                    
                 </div>
                 {/* <div className="buttons d-flex justify-content-center mb-5 pb-5">
                     <button className="btn btn-outline-dark me-2" onClick={()=>setFilter(data)}>All</button>
