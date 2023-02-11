@@ -74,15 +74,15 @@ const Contact = () => {
         <div className="row text-center">
           <div className="col-md-4">
           <i class="fa fa-map-marker fs-3 mt-4"></i>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Tashkent, Uzbekistan</p>
           </div>
           <div className="col-md-4">
           <i class="fa fa-phone mt-4 fs-3"></i>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>+(998)-99-065-42-43</p>
           </div>
           <div className="col-md-4">
           <i class="fa fa-envelope mt-4 fs-3"></i>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>jamshidzayniev10@gmail.com</p>
           </div>
           </div>
         </div>
